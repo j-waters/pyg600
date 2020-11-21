@@ -1,0 +1,25 @@
+G7:
+  down: amixer set Master 5%-
+  held: amixer set Master 5%-
+G8:
+  down: amixer set Master 5%+
+  held: amixer set Master 5%+
+G9:
+  down: xdotool key alt+Left
+G10:
+  down: xdotool click --repeat 2 1
+G11:
+  down: bspc desktop -f next.local
+G12:
+  down: rofi -columns 2 -show
+G13:
+  down: xdotool mousedown 1
+  up: xdotool mouseup 1
+G14:
+  down: bspc desktop -f prev.local
+G15:
+  down: /home/james/.scripts/copypaste copy
+G16:
+  down: /home/james/.scripts/copypaste paste
+G17:
+  down: xdotool key ctrl+x
