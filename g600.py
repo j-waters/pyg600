@@ -4,6 +4,7 @@ from yaml import safe_load
 from subprocess import Popen
 from os import path
 from time import sleep
+import click
 
 DEVICE = '/dev/input/by-id/usb-Logitech_Gaming_Mouse_G600_1836A07F43730017-if01-event-kbd'
 
@@ -24,7 +25,6 @@ MAP = {
 	13: ("G20", False),
 	24: ("SCROLL-LEFT", False),
 	25: ("SCROLL-RIGHT", False),
-	
 	-1: ("G7", True),
 	16: ("G8", True),
 	30: ("G9", True),
@@ -43,11 +43,7 @@ MAP = {
 	31: ("SCROLL-RIGHT", True),
 }
 
-STATE_MAP = {
-	1: "down",
-	2: "held",
-	0: "up"
-}
+STATE_MAP = {1: "down", 2: "held", 0: "up"}
 
 
 def handle(code, state):
@@ -91,6 +87,7 @@ def handle_loop():
 		print("device disconnected", e)
 
 
+@click.command()
 def main_loop():
 	while True:
 		if path.exists(DEVICE):

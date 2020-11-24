@@ -14,13 +14,12 @@ setup(
 	author_email="james@jcwaters.co.uk",
 	description="Utility program for binding actions to keys on the Logitech G600 gaming mouse",
 	url="https://github.com/j-waters/pyg600",
-	packages=find_packages(),
-	include_package_data=True,
-	install_requires=['PyYAML'],
+	py_modules=['g600'],
+	install_requires=['PyYAML', 'Click', 'evdev'],
 	setup_requires=['setuptools-git-versioning'],
 	entry_points='''
         [console_scripts]
-        pyg600=pyg600:main_loop
+        pyg600=g600:main_loop
     ''',
 	python_requires='>=3.7',
 )
