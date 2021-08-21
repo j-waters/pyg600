@@ -1,1 +1,1 @@
-include dynbsp/default_config.yaml
+include pyg600/default.yaml

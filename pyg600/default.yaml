@@ -1,0 +1,27 @@
+keys:
+  G7:
+    down: amixer set Master 5%-
+    held: amixer set Master 5%-
+  G8:
+    down: amixer set Master 5%+
+    held: amixer set Master 5%+
+  G9:
+    down: ydotool key alt+Left
+  G10:
+    down: ydotool click --repeat 2 1
+  G11:
+    down: bspc desktop -f next.local
+  G12:
+    down: wofi
+  G13:
+    down: ydotool mousedown 1
+    up: ydotool mouseup 1
+  G14:
+    down: bspc desktop -f prev.local
+  G15:
+    down: ~/.config/sway/scripts/copypaste copy
+  G16:
+    down: ~/.config/sway/scripts/copypaste paste
+  G17:
+    down: ydotool key ctrl+x
+device: /dev/input/by-id/usb-Logitech_Gaming_Mouse_G600_1836A07F43730017-if01-event-kbd
