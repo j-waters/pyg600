@@ -10,18 +10,17 @@ keys:
   G10:
     down: ydotool click --repeat 2 1
   G11:
-    down: bspc desktop -f next.local
+    down: swaymsg "workspace next"
   G12:
     down: wofi
   G13:
-    down: ydotool mousedown 1
-    up: ydotool mouseup 1
+    down: ydotool click left
   G14:
-    down: bspc desktop -f prev.local
+    down: swaymsg "workspace prev"
   G15:
-    down: ~/.config/sway/scripts/copypaste copy
+    down: ydotool key ctrl+c
   G16:
-    down: ~/.config/sway/scripts/copypaste paste
+    down: ydotool key ctrl+v
   G17:
     down: ydotool key ctrl+x
 device: /dev/input/by-id/usb-Logitech_Gaming_Mouse_G600_1836A07F43730017-if01-event-kbd
