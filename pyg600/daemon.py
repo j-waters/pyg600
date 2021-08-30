@@ -1,6 +1,6 @@
 from evdev import InputDevice, ecodes
 from select import select
-from subprocess import run
+from subprocess import Popen
 from os import path
 from time import sleep
 
@@ -43,9 +43,8 @@ class Daemon:
         command = conf.get_command(state, mod)
         if command is None:
             return
-        print(f"executing: {command}")
-        run(command, shell=True)
-        print()
+        print(f"\texecuting: {command}")
+        Popen(command, shell=True)
 
 
 def start():
