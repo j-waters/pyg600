@@ -9,7 +9,7 @@ depends=('python-click'
          'python-evdev'
          'python-pyxdg')
 makedepends=('git' 'python-setuptools')
-conflicts=()
+conflicts=('pyg600')
 provides=('pyg600')
 license=('MIT')
 arch=('any')
