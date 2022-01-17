@@ -14,6 +14,7 @@ def start():
         key_conf: ModKeyConfig = config.key_configs.get(key)
         if key_conf is None:
             return
+        print(f"Handling key: {key} ({event.key}), state: {event.state.name}, mod: {is_mod}")
         command = key_conf.get_command_with_mod(event.state, is_mod)
         if command is not None:
             Popen(command, shell=True)
