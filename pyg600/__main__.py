@@ -1,6 +1,6 @@
 import click
 
-from .daemon import start
+from .pyg600 import start
 
 @click.command()
 def main():

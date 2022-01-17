@@ -23,4 +23,4 @@ keys:
     down: ydotool key ctrl+v
   G17:
     down: ydotool key ctrl+x
-device: /dev/input/by-id/usb-Logitech_Gaming_Mouse_G600_1836A07F43730017-if01-event-kbd
+device_id: usb-Logitech_Gaming_Mouse_G600_1836A07F43730017-if01-event-kbd

@@ -5,9 +5,7 @@ pkgver=1.0.0
 pkgdesc="Utility program for binding actions to keys on the Logitech G600 gaming mouse"
 url="https://github.com/j-waters/pyg600"
 depends=('python-click'
-         'python-yaml'
-         'python-evdev'
-         'python-pyxdg')
+         'pymacropad')
 makedepends=('git' 'python-setuptools')
 conflicts=('pyg600')
 provides=('pyg600')
